@@ -1,0 +1,33 @@
+<header>
+    <div class="header-container">
+       <a routerLink="/"></a>
+            <img src="/img/Group.jpg" alt="The Scoville Inferno Logo">
+            <p class="logo-text">The Scoville Inferno </p>
+        
+        <nav class="header__nav">
+            <ul>
+                <li><a routerLink="/">Products</a></li>
+                <li><a routerLink="/guides-recipes">Guides & Recipes</a></li>
+                <li><a routerLink="/community">Community</a></li>
+                <li><a routerLink="/resources">Resources</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
+            </ul>
+        </nav>
+
+         <div class="header__auth-buttons" id="auth-guest">
+            <a routerLink="/login" class="button button--secondary">Sign in</a>
+            <a routerLink="/register" class="button button--primary">Register</a>
+        </div>
+
+        
+        <div class="header__user-actions" id="auth-user">
+            <a routerLink="/account" class="user-icon" aria-label="My Account">
+                <img src="../static/img/icons/User_alt.svg" alt="User Account">
+            </a>
+            <a routerLink="/cart" class="cart-icon" aria-label="Shopping Cart">
+                <img src="../static/img/icons/Shopping_bag.svg" alt="Shopping Cart">
+            </a>
+
+        </div>
+    </div>
+</header>

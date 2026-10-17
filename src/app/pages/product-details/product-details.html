@@ -1,0 +1,80 @@
+
+@if (product) {
+  <main class="page-product">
+    <div class="container">
+
+      <section class="product-details-section">
+        <div class="product-image-container">
+          <img
+            [src]="product.image"
+            [alt]="product.title"
+            class="product-image"
+          />
+        </div>
+
+        <div class="product-info-column">
+          <div class="product-title-price">
+            <h1 class="product-name">
+              {{ product.title }}
+            </h1>
+
+            <div class="price-section">
+              <span class="price-tag">per 100g</span>
+              <p class="product-price">
+                {{ product.price | currency:'USD' }}
+              </p>
+            </div>
+          </div>
+
+          <div class="product-description">
+            <p>{{ product.desc }}</p>
+          </div>
+        </div>
+      </section>
+
+      @if (details) {
+        <section class="product-long-description">
+          <h2>Product details</h2>
+          <p>{{ details.description }}</p>
+        </section>
+
+        <section class="product-specifications">
+          <h2>Specifications</h2>
+
+          @for (spec of details.specifications; track spec.label) {
+            <div class="specification">
+              <strong>{{ spec.label }}:</strong>
+              <span>{{ spec.value }}</span>
+            </div>
+          }
+        </section>
+
+        <section class="product-reviews">
+          <h2>Reviews</h2>
+
+          @for (review of details.reviews; track review.name) {
+            <article class="review-card">
+              <div class="review-rating">
+                {{ '★'.repeat(review.rating) }}{{ '☆'.repeat(5 - review.rating) }}
+              </div>
+
+              <h3>{{ review.title }}</h3>
+              <p>{{ review.text }}</p>
+
+              <div class="review-author">
+                <img
+                  [src]="review.avatar"
+                  [alt]="review.name"
+                  class="review-avatar"
+                />
+                <span>{{ review.name }}</span>
+              </div>
+            </article>
+          }
+        </section>
+      }
+    </div>
+  </main>
+} @else {
+  <h1>Product not found</h1>
+}

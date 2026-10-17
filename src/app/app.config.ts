@@ -1,5 +1,6 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
+import { Header } from './components/header/header';
 
 import { routes } from './app.routes';
 
@@ -9,3 +10,4 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes)
   ]
 };
+

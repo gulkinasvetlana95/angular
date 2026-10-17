@@ -46,98 +46,98 @@ export class Home {
   peppers: Pepper[] = [
     {
       id: "1",
-      title: "The Abyss - Pure Evil Extract",
+      title: "Ghost Pepper Powder",
       image: "img/Image-1.jpg",
-      desc: "One drop 77 is a crime. Use with cautio",
-      price: 40,
+      desc: "A lingering heat that will haunt you",
+      price: 6.66,
       keywords: ['Whole Chilies', 'Grund Spices']
     },
     {
       id: "2",
-      title: "'Why Did I Do This?' Hot Salt",
+      title: "'Mango Habanero Mercy Sauce",
       image: "img/Image-2.jpg",
-      desc: "A salty, crunchy path to pure regret",
-      price: 16.2,
+      desc: " Lures you in with sweetness, then bites",
+      price: 8.50,
       keywords: ['Ground Spices']
     },
     {
       id: "3",
-      title: "Five-Alarm Chili Starter Kit",
+      title: "Trinidad Scorpion Venom",
       image: "img/Image-3.jpg",
-      desc: "For questioning all your life choices",
-      price: 19.55,
+      desc: "A blistering sting you won't forget",
+      price: 12.99,
       keywords: ['Scorching Sauces']
     },
     {
       id: "4",
-      title: "Satan's Kiss Chilies",
+      title: "Whole Carolina Reapers (10-pack)",
       image: "img/Image-4.png",
-      desc: "Cute round peppers with a cruel punch",
-      price: 9.55,
+      desc: "A bag full of painful mistakes",
+      price: 9.99,
       keywords: ['Whole Chilies']
     },
     {
       id: "5",
-      title: "The Unforgiving Hot Sauce",
+      title: "Crybaby's Cayenne Sauce",
       image: "img/Image-5.png",
-      desc: "Made with scorpion peppers and spite",
-      price: 16.89,
+      desc: "A classic way to learn your lesson",
+      price: 5.00,
       keywords: ['Sadistic Blends']
     },
     {
       id: "6",
-      title: "Deceptively Mild Ancho Powder",
+      title: "Satan's Lollipops (3-pack)",
       image: "img/Image-6.png",
-      desc: "Smoky, gentle, and full of lies",
-      price: 19.55,
+      desc: "The sweetest suffering on a stick",
+      price: 7.77,
       keywords: ['Infernal Extracts']
     },
     {
       id: "7",
-      title: "Whole Carolina Reapers (10-pack)",
+      title: "Deceptively Mild Ancho Powder",
       image: "img/Image-7.png",
-      desc: "A bag full of painful mistakes",
-      price: 9.99,
+      desc: "Smoky, gentle, and full of lies",
+      price: 4.20,
       keywords: ['Warming Up']
     },
     {
       id: "8",
-      title: "Crybaby's Cayenne Sauce",
+      title: "The Unforgiving Hot Sauce",
       image: "img/Image-8.png",
-      desc: "A classic way to learn your lesson",
-      price: 5.55,
+      desc: "Made with scorpion peppers and spite",
+      price: 11.99,
       keywords: ['Serious Heat']
     },
     {
       id: "9",
-      title: "Satan's Lollipops (3-pack)",
+      title: "Satan's Kiss Chilies",
       image: "img/Image-9.png",
-      desc: "The sweetest suffering on a stick",
-      price: 7.77,
+      desc: "Cute round peppers with a cruel punch",
+      price: 6.20,
       keywords: ['Ring of Fire']
     },
     {
       id: "10",
-      title: "Ghost Pepper Powder",
+      title: "Five-Alarm Chili Starter Kit",
       image: "img/Image-10.png",
-      desc: "A lingering heat that will haunt you",
-      price: 6.66,
+      desc: "For questioning all your life choices",
+      price: 19.50,
       keywords: ['Legal Weapon']
     },
     {
       id: "11",
-      title: "Mango Habanero Mercy Sauce",
+      title: "The Abyss - Pure Evil Extract",
       image: "img/Image-11.png",
-      desc: "Lures you in with sweetness, then bitesk",
-      price: 17.2,
+      desc: "One drop is a crime. Use with caution",
+      price: 25.00,
       keywords: ['Warming Up']
     },
     {
       id: "12",
-      title: "Trinidad Scorpion Venom",
+      title: "Why Did I Do This? Hot Salt",
       image: "img/Image-12.png",
-      desc: "A blistering sting you won't forget",
-      price: 13.13,
+      desc: "A salty, crunchy path to pure regret",
+      price: 16.20,
       keywords: ['Infernal Extracts']
     }
   ];
@@ -154,7 +154,7 @@ export class Home {
         rating: 5,
         title: 'This is the real deal!', 
         text: 'Used Citra for my latest NEIPA, and the aroma is absolutely incredible. Poured hazy, with intense notes of grapefruit and passion fruit. A must-have for any hop-forward beer!',
-        avatar: 'img/avatar-1.png',
+        avatar: 'img/avatar-1.jpg',
         name: 'ChiliHead_27',
       },
       {
@@ -168,7 +168,7 @@ export class Home {
         rating: 1,
         title: ' I`ve Made A Huge Mistake', 
         text: 'My friend dared me. It`s been an hour. I can see sounds. My disappointment is immeasurable and my day is ruined. This is a weapon, not a spice.',
-        avatar: 'img/avatar-3.png',
+        avatar: 'img/avatar-3.jpg',
         name: 'RegretfulRookie',
       }
     ],
@@ -177,11 +177,11 @@ export class Home {
       { label: 'Scoville Heat Units (SHU)', value: '855,000 – 1,041,427' },
       { label: 'Flavor Profile', value: 'Deceptively sweet, fruity, then overwhelmingly fiery' },
       { label: 'Recommended Uses', value: 'Extreme sauces, chili cook-offs, dares.' },
-      { label: 'Warning:', value: 'Use in a well-ventilated area. Keep away from children, pets, and common sense.' },
+      { label: 'Warning', value: 'Use in a well-ventilated area. Keep away from children, pets, and common sense.' },
     ]
   },
   {
-    id: '2',
+    id: '11',
     description: `The Abyss - Pure Evil Extract is a concentrated descent into the darkest depths of chili heat. Created for extreme spice enthusiasts, this powerful extract brings an intense kick to recipes that demand more than ordinary peppers can deliver.
 A tiny amount can transform a sauce or stew, while careless overuse can overwhelm the flavor of an entire dish. This is not an ingredient to use casually.
 Use only as directed and keep it away from skin, eyes, children, and pets. Some doors are better opened one drop at a time.`,
@@ -190,21 +190,21 @@ Use only as directed and keep it away from skin, eyes, children, and pets. Some 
         rating: 5,
         title: 'An incredibly intense extract',
         text: 'An incredibly intense extract. A tiny amount makes a huge difference in a large batch of sauce.',
-        avatar: 'NC',
+        avatar: 'img/avatar-4.jpg',
         name: 'Nathan C.'
       },
       {
         rating: 4,
         title: 'Definitely a specialist product',
         text: 'Definitely a specialist product. Handle carefully and measure precisely.',
-        avatar: 'VH',
+        avatar: 'img/avatar-5.jpg',
         name: 'Victoria H.'
       },
       {
         rating: 5,
         title: 'The name and packaging are fantastic',
         text: 'The name and packaging are fantastic. Made for people who take extreme heat seriously.',
-        avatar: 'AP',
+        avatar: 'img/avatar-6.jpe',
         name: 'Adam P.'
       }
     ],
@@ -219,32 +219,30 @@ Use only as directed and keep it away from skin, eyes, children, and pets. Some 
     ]
   },
   {
-    id: '3',
+    id: '12',
     description: `"Why Did I Do This?" Hot Salt is the wicked seasoning that turns an ordinary sprinkle into a questionable life decision. Combining the familiar crunch of salt with a fiery chili kick, it's made for anyone who likes bold flavors.
-
 The first taste brings savory satisfaction, followed by a growing warmth that sneaks into every bite. Sprinkle it over fries, popcorn, roasted vegetables, or grilled meat for an instant spicy upgrade.
-
 One pinch is temptation. A second is confidence. A third might explain the name.`,
    reviews: [
       {
         rating: 5,
         title: 'Amazing on fries',
         text: 'Amazing on fries! It adds a nice spicy kick without needing to make a sauce.',
-        avatar: 'ML',
+        avatar: 'img/avatar-7.png',
         name: 'Mia L.'
       },
       {
         rating: 4,
         title: 'A fun seasoning with a good',
         text: 'A fun seasoning with a good crunch and plenty of flavor. Great on popcorn, too.',
-        avatar: 'NS',
+        avatar: 'img/avatar-1.jpg',
         name: 'Noah S.'
       },
       {
         rating: 5,
         title: 'The name made me laugh, but',
         text: 'The name made me laugh, but the flavor made me keep it. My roasted potatoes are so much better now.',
-        avatar: 'EW',
+        avatar: 'img/avatar-2.png',
         name: 'Ella W.'
       }
     ],
@@ -260,7 +258,7 @@ One pinch is temptation. A second is confidence. A third might explain the name.
     ]
   },
   {
-    id: '4',
+    id: '10',
     description: `The Five-Alarm Chili Starter Kit is your invitation to enter the dangerous world of serious spice. Designed for adventurous cooks, this kit brings together the essentials for creating a bold, fiery chili.
 
 Layer rich aromas, deep chili flavors, and escalating heat into a dish that starts with irresistible comfort and ends with a challenge worthy of its name.
@@ -271,21 +269,21 @@ Perfect for homemade chili, spicy stews, or experimenting with your own signatur
         rating: 5,
         title: 'Made an amazing pot of chili',
         text: 'Made an amazing pot of chili with this kit. The flavors came together beautifully!',
-        avatar: 'EM',
+        avatar: 'img/avatar-3.jpg',
         name: 'Ethan M.'
       },
       {
         rating: 4,
         title: 'A great gift for anyone who',
         text: 'A great gift for anyone who enjoys cooking spicy food. Would love to see more kit variations.',
-        avatar: 'SR',
+        avatar: 'img/avatar-4.jpg',
         name: 'Samantha R.'
       },
       {
         rating: 5,
         title: 'Perfect for experimenting in the kitchen',
         text: 'Perfect for experimenting in the kitchen. My homemade chili has never tasted this exciting.',
-        avatar: 'LF',
+        avatar: 'img/avatar-5.jpg',
         name: 'Lucas F.'
       }
     ],
@@ -301,7 +299,7 @@ Perfect for homemade chili, spicy stews, or experimenting with your own signatur
     ]
   },
   {
-    id: '5',
+    id: '9',
     description: `Satan's Kiss Chilies are small, round, and dangerously charming. Their glossy red appearance makes them look almost harmless, but their bold chili flavor and lively heat tell a very different story.
 
 Beneath their playful appearance lies a punchy pepper with a bright, slightly sweet taste and a satisfying kick. They're proof that trouble doesn't need to be big to leave a lasting impression.
@@ -312,21 +310,21 @@ Stuff them with cheese, add them to antipasti, or bring color and heat to your f
         rating: 5,
         title: 'They look adorable, but they definitely',
         text: 'They look adorable, but they definitely have a kick! Perfect for adding color to a platter.',
-        avatar: 'GT',
+        avatar: 'img/avatar-6.jpe',
         name: 'Grace T.'
       },
       {
         rating: 4,
         title: 'Great flavor and a fun shape',
         text: 'Great flavor and a fun shape. I tried stuffing them with cheese, and they turned out delicious.',
-        avatar: 'PN',
+        avatar: 'img/avatar-7.png',
         name: 'Peter N.'
       },
       {
         rating: 5,
         title: 'A lovely addition to antipasti',
         text: 'A lovely addition to antipasti. They look great and bring just the kind of spicy character I enjoy.',
-        avatar: 'OB',
+        avatar: 'img/avatar-1.jpg',
         name: 'Olivia B.'
       }
     ],
@@ -342,7 +340,7 @@ Stuff them with cheese, add them to antipasti, or bring color and heat to your f
     ]
   },
   {
-    id: '6',
+    id: '8',
     description: `The Unforgiving Hot Sauce was created for those who believe ordinary heat is simply not enough. Packed with the fierce character of scorpion peppers, this sauce delivers an intense chili punch wrapped in bold, unforgettable flavor.
 
 The first taste offers a brief moment to appreciate its complexity. Then the heat begins to climb, spreading across your palate and refusing to leave quietly.
@@ -353,21 +351,21 @@ Use sparingly in burgers, marinades, wings, or homemade chili. A few drops can t
         rating: 5,
         title: 'The name is accurate',
         text: 'The name is accurate! Intense heat with a bold flavor that works beautifully in burgers.',
-        avatar: 'MD',
+        avatar: 'img/avatar-2.png',
         name: 'Matthew D.'
       },
       {
         rating: 4,
         title: 'Very powerful sauce',
         text: 'Very powerful sauce. I only need a little, and it adds a serious kick to my meals.',
-        avatar: 'EK',
+        avatar: 'img/avatar-3.jpg',
         name: 'Emma K.'
       },
       {
         rating: 5,
         title: 'Exactly what I wanted from an',
         text: 'Exactly what I wanted from an extreme hot sauce. Bold, fiery, and memorable.',
-        avatar: 'JW',
+        avatar: 'img/avatar-4.jpg',
         name: 'Jack W.'
       }
     ],
@@ -394,21 +392,21 @@ Sprinkle it into chili, rubs, sauces, or roasted vegetables. Sometimes the most 
         rating: 5,
         title: 'Rich, smoky, and slightly sweet',
         text: 'Rich, smoky, and slightly sweet. It adds incredible depth to homemade chili.',
-        avatar: 'NG',
+        avatar: 'img/avatar-5.jpg',
         name: 'Natalie G.'
       },
       {
         rating: 4,
         title: 'Lovely aroma and easy to use',
         text: 'Lovely aroma and easy to use. More about flavor than heat, which is exactly what I wanted.',
-        avatar: 'JL',
+        avatar: 'img/avatar-6.jpe',
         name: 'James L.'
       },
       {
         rating: 5,
         title: 'Fantastic in taco seasoning and marinades',
         text: 'Fantastic in taco seasoning and marinades. A small amount makes a noticeable difference.',
-        avatar: 'IP',
+        avatar: 'img/avatar-7.png',
         name: 'Isabella P.'
       }
     ],
@@ -424,7 +422,7 @@ Sprinkle it into chili, rubs, sauces, or roasted vegetables. Sometimes the most 
     ]
   },
   {
-    id: '8',
+    id: '4',
     description: `Meet the Carolina Reaper, one of the most notorious chili peppers ever grown. Recognized for its twisted tail and wicked appearance, this fiery monster combines a surprisingly fruity aroma with an absolutely savage burn.
 
 Don't let its small size fool you. The heat can build relentlessly, transforming a curious taste into an unforgettable experience. Every pepper carries a serious punch.
@@ -435,21 +433,21 @@ Use them carefully in homemade sauces, spicy stews, or measured chili preparatio
         rating: 5,
         title: 'Beautiful peppers with a surprisingly fruity',
         text: 'Beautiful peppers with a surprisingly fruity aroma. Definitely not for beginners!',
-        avatar: 'CB',
+        avatar: 'img/avatar-3.jpg',
         name: 'Chris B.'
       },
       {
         rating: 4,
         title: 'Good quality and exactly what I',
         text: 'Good quality and exactly what I expected. One pepper goes a very long way in homemade sauce.',
-        avatar: 'OH',
+        avatar: 'img/avatar-1.jpg',
         name: 'Oliver H.'
       },
       {
         rating: 5,
         title: 'The ultimate challenge for chili lovers',
         text: 'The ultimate challenge for chili lovers. The fruity flavor is fantastic, but the heat is no joke.',
-        avatar: 'MD',
+        avatar: 'img/avatar-2.png',
         name: 'Megan D.'
       }
     ],
@@ -465,7 +463,7 @@ Use them carefully in homemade sauces, spicy stews, or measured chili preparatio
     ]
   },
   {
-    id: '9',
+    id: '5',
     description: `Crybaby's Cayenne Sauce is a classic with a wicked sense of humor. Made for those who love straightforward chili flavor, it delivers a bright, peppery kick with enough warmth to wake up even the dullest meal.
 
 The first drop brings a tangy burst of flavor, followed by a clean, building heat that spreads without completely stealing the show. But keep pouring, and those tears might not be so imaginary.
@@ -476,21 +474,21 @@ Add it to pizza, eggs, sandwiches, or your favorite comfort food. Even a little 
         rating: 5,
         title: 'A fantastic everyday hot sauce',
         text: 'A fantastic everyday hot sauce. Goes with practically everything in my kitchen.',
-        avatar: 'RC',
+        avatar: 'img/avatar-4.jpg',
         name: 'Ryan C.'
       },
       {
         rating: 4,
         title: 'Nice tangy flavor with a clean',
         text: 'Nice tangy flavor with a clean kick. I wish it were just a little hotter!',
-        avatar: 'LS',
+        avatar: 'img/avatar-7.png',
         name: 'Laura S.'
       },
       {
         rating: 5,
         title: 'Perfect on pizza and scrambled eggs',
         text: 'Perfect on pizza and scrambled eggs. Simple, tasty, and surprisingly addictive.',
-        avatar: 'BF',
+        avatar: 'img/avatar-6.jpe',
         name: 'Ben F.'
       }
     ],
@@ -506,7 +504,7 @@ Add it to pizza, eggs, sandwiches, or your favorite comfort food. Even a little 
     ]
   },
   {
-    id: '10',
+    id: '6',
     description: `Satan's Lollipops look like innocent candy, but don't let their playful appearance fool you. These fiery little treats are made for adventurous spice lovers who enjoy a wicked twist on sweetness.
 
 The sugary first impression gives way to a spicy surprise that turns every lick into a battle between pleasure and regret. Sweet, bold, and devilishly memorable, they're guaranteed to make people look twice.
@@ -517,21 +515,21 @@ Perfect for novelty gifts, themed parties, or anyone who believes candy should c
         rating: 5,
         title: 'Such a fun gift',
         text: 'Such a fun gift! Everyone thought they were ordinary lollipops until the spicy surprise arrived.',
-        avatar: 'HJ',
+        avatar: 'img/avatar-1.jpg',
         name: 'Hannah J.'
       },
       {
         rating: 4,
         title: 'Funny concept and great for parties',
         text: 'Funny concept and great for parties. The packaging alone makes people curious.',
-        avatar: 'TR',
+        avatar: 'img/avatar-2.png',
         name: 'Tom R.'
       },
       {
         rating: 5,
         title: 'Bought these for a friend who',
         text: 'Bought these for a friend who loves spicy food. The reaction was absolutely priceless!',
-        avatar: 'CA',
+        avatar: 'img/avatar-3.jpg',
         name: 'Chloe A.'
       }
     ],
@@ -548,7 +546,7 @@ Perfect for novelty gifts, themed parties, or anyone who believes candy should c
     ]
   },
   {
-    id: '11',
+    id: '2',
     description: `Mango Habanero Mercy Sauce is a dangerous little masterpiece that perfectly balances tropical sweetness with savage heat. Ripe mango brings a smooth, fruity flavor, while habanero peppers prepare a fiery surprise that refuses to be ignored.
 
 At first, the sweetness feels comforting and almost innocent. Then the habanero strikes, spreading a sharp, lingering burn that turns every drop into a delicious mistake.
@@ -559,21 +557,21 @@ Drizzle it over grilled chicken, tacos, or roasted vegetables. Sweet, spicy, and
         rating: 5,
         title: 'The mango sweetness is incredible, and',
         text: 'The mango sweetness is incredible, and then the heat sneaks up on you. Perfect for chicken wings!',
-        avatar: 'ER',
+        avatar: 'img/avatar-4.jpg',
         name: 'Emily R.'
       },
       {
         rating: 4,
         title: 'Great balance of fruity and spicy',
         text: 'Great balance of fruity and spicy. A little sweeter than expected, but delicious on tacos.',
-        avatar: 'DK',
+        avatar: 'img/avatar-5.jpg',
         name: 'Daniel K.'
       },
       {
         rating: 5,
         title: 'My new favorite hot sauce',
         text: 'My new favorite hot sauce. Sweet, tangy, and just evil enough to keep me coming back.',
-        avatar: 'SM',
+        avatar: 'img/avatar-6.png',
         name: 'Sophie M.'
       }
     ],
@@ -589,7 +587,7 @@ Drizzle it over grilled chicken, tacos, or roasted vegetables. Sweet, spicy, and
     ]
   },
   {
-    id: '12',
+    id: '3',
     description: `Trinidad Scorpion Venom is not a pepper for the faint-hearted. Originating from Trinidad and Tobago, this legendary chili is infamous for its scorching intensity and distinctive scorpion-like sting. Its fruity, slightly floral aroma hides a truly merciless character.
 
 The first taste may seem manageable, but that illusion doesn't last long. A wave of brutal heat builds across your tongue and lingers long after the flavor disappears.
@@ -600,21 +598,21 @@ Use tiny amounts in hot sauces, marinades, and chili recipes when you want to pu
         rating: 5,
         title: 'This sauce means business',
         text: 'This sauce means business! The heat builds slowly, and the fruity flavor makes it even better.',
-        avatar: 'MT',
+        avatar: 'img/avatar-7.jpg',
         name: 'Michael T.'
       },
       {
         rating: 4,
         title: 'Seriously hot stuff',
         text: 'Seriously hot stuff. A couple of drops in a pot of chili were more than enough for me.',
-        avatar: 'AP',
+        avatar: 'img/avatar-1.jpg',
         name: 'Alex P.'
       },
       {
         rating: 5,
         title: 'Amazing depth of flavor',
         text: 'Amazing depth of flavor. Not just heat for the sake of heat—this one has real character.',
-        avatar: 'JW',
+        avatar: 'img/avatar-2.jpg',
         name: 'Jessica W.'
       }
     ],

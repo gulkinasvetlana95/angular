@@ -13,68 +13,79 @@
         </div>
 
         <div class="product-info-column">
-          <div class="product-title-price">
-            <h1 class="product-name">
-              {{ product.title }}
-            </h1>
+          <h1 class="product-name">{{ product.title }}</h1>
 
-            <div class="price-section">
-              <span class="price-tag">per 100g</span>
-              <p class="product-price">
-                {{ product.price | currency:'USD' }}
-              </p>
-            </div>
+          <div class="price-section">
+            <span class="price-tag">per 100g</span>
+            <p class="product-price">
+              {{ product.price | currency:'USD' }}
+            </p>
           </div>
 
-          <div class="product-description">
-            <p>{{ product.desc }}</p>
-          </div>
+          @if (details) {
+            <section class="product-long-description">
+              <p>{{ details.description }}</p>
+            </section>
+          }
+
+          <button class="add-to-cart">Add to Cart</button>
         </div>
       </section>
 
       @if (details) {
-        <section class="product-long-description">
-          <h2>Product details</h2>
-          <p>{{ details.description }}</p>
-        </section>
-
         <section class="product-specifications">
-          <h2>Specifications</h2>
+          <button
+            class="specifications-toggle"
+            (click)="showSpecifications = !showSpecifications"
+            [attr.aria-expanded]="showSpecifications"
+          >
+            <span class="specifications-toggle_span">Technical Specifications</span>
+            <span class="arrow" [class.open]="showSpecifications">
+              ⌃
+            </span>
+          </button>
 
-          @for (spec of details.specifications; track spec.label) {
-            <div class="specification">
-              <strong>{{ spec.label }}:</strong>
-              <span>{{ spec.value }}</span>
+          @if (showSpecifications) {
+            <div class="specifications-content">
+              @for (spec of details.specifications; track spec.label) {
+                <div class="specification">
+                  <strong>{{ spec.label }}:</strong>
+                  <span>{{ spec.value }}</span>
+                </div>
+              }
             </div>
           }
         </section>
 
         <section class="product-reviews">
-          <h2>Reviews</h2>
+          <h2>Latest reviews</h2>
 
-          @for (review of details.reviews; track review.name) {
-            <article class="review-card">
-              <div class="review-rating">
-                {{ '★'.repeat(review.rating) }}{{ '☆'.repeat(5 - review.rating) }}
-              </div>
+          <div class="reviews-grid">
+            @for (review of details.reviews; track $index) {
+              <article class="review-card">
+                <div class="review-rating">
+                  {{ '★'.repeat(review.rating) }}{{ '☆'.repeat(5 - review.rating) }}
+                </div>
 
-              <h3>{{ review.title }}</h3>
-              <p>{{ review.text }}</p>
+                <h3>{{ review.title }}</h3>
+                <p>{{ review.text }}</p>
 
-              <div class="review-author">
-                <img
-                  [src]="review.avatar"
-                  [alt]="review.name"
-                  class="review-avatar"
-                />
-                <span>{{ review.name }}</span>
-              </div>
-            </article>
-          }
+                <div class="review-author">
+                  <img
+                    [src]="review.avatar"
+                    [alt]="review.name"
+                    class="review-avatar"
+                  />
+                  <span>{{ review.name }}</span>
+                </div>
+              </article>
+            }
+          </div>
         </section>
       }
+
     </div>
   </main>
 } @else {
-  <h1>Product not found</h1>
+  <h1 class="not-found">Product not found</h1>
 }

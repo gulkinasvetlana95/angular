@@ -1,8 +1,8 @@
-
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Home } from '../home/home';
+
 interface Pepper {
   id: string;
   title: string;
@@ -21,13 +21,36 @@ interface Pepper {
 })
 export class ProductDetails implements OnInit {
   product?: Pepper;
-  details: any;
+  details?: {
+    id: string;
+    description: string;
+    reviews: {
+      title: string;
+      name: string;
+      avatar: string;
+      rating: number;
+      text: string;
+    }[];
+    specifications: {
+      label: string;
+      value: string;
+    }[];
+  };
+
+  private home = new Home();
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    // Здесь пока получаем id из адреса страницы.
-    console.log('Product ID:', id);
+
+    this.product = this.home.peppers.find(
+      product => product.id === id
+    );
+
+    this.details = this.home.productDetails.find(
+      item => item.id === id
+    );
   }
+  showSpecifications = false;
 }

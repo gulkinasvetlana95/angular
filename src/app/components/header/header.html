@@ -1,13 +1,16 @@
 <header>
+    @if (!authService.isLoggedIn()){
     <div class="header-container">
-       <a routerLink="/"></a>
+       <a routerLink="/">
             <img src="/img/Group.jpg" alt="The Scoville Inferno Logo">
+             </a>
             <p class="logo-text">The Scoville Inferno </p>
+           
         
         <nav class="header__nav">
             <ul>
                 <li><a routerLink="/">Products</a></li>
-                <li><a routerLink="/guides-recipes">Guides & Recipes</a></li>
+                <li><a routerLink="/Recipes">Guides & Recipes</a></li>
                 <li><a routerLink="/community">Community</a></li>
                 <li><a routerLink="/resources">Resources</a></li>
                 <li><a routerLink="/contact">Contact</a></li>
@@ -15,19 +18,36 @@
         </nav>
 
          <div class="header__auth-buttons" id="auth-guest">
-            <a routerLink="/login" class="button button--secondary">Sign in</a>
-            <a routerLink="/register" class="button button--primary">Register</a>
+            <a routerLink="/Login" class="button button--secondary">Sign in</a>
+            <a routerLink="/Register" class="button button--primary">Register</a>
         </div>
-
+    </div>
+} @else{
+    <div class="header-container">
+        <a routerLink="/">
+            <img src="/img/Group.jpg" alt="The Scoville Inferno Logo"></a>
+            <p class="logo-text">The Scoville Inferno </p>
+       
+        <nav class="header__nav">
+             <ul>
+                <li><a routerLink="/">Products</a></li>
+                <li><a routerLink="/Recipes">Guides & Recipes</a></li>
+                <li><a routerLink="/community">Community</a></li>
+                <li><a routerLink="/resources">Resources</a></li>
+                <li><a routerLink="/contact">Contaсt</a></li>
+            </ul>
+        </nav>
         
-        <div class="header__user-actions" id="auth-user">
-            <a routerLink="/account" class="user-icon" aria-label="My Account">
-                <img src="../static/img/icons/User_alt.svg" alt="User Account">
-            </a>
-            <a routerLink="/cart" class="cart-icon" aria-label="Shopping Cart">
-                <img src="../static/img/icons/Shopping_bag.svg" alt="Shopping Cart">
+        <div class="user">
+            
+            <a routerLink="/" class="user-icon">
+                <img src="/img/User_alt.svg" alt="User Account"></a>
+        
+            <a routerLink="" class="cart-icon" aria-label="Shopping Cart">
+                <img src="/img/Shopping_bag.svg" alt="Shopping Cart">
             </a>
 
         </div>
     </div>
+}
 </header>

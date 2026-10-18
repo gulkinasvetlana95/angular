@@ -85,17 +85,17 @@
       </button>
 
       <button
-        [class.active-sort]="sort === 'low'"
+        [class.active-sort]="sort === 'priceAsc'"
         class="sort-button"
-        (click)="setSort('low')"
+        (click)="setSort('priceAsc')"
       >
         Price ascending
       </button>
 
       <button
-        [class.active-sort]="sort === 'high'"
+        [class.active-sort]="sort === 'priceDesc'"
         class="sort-button"
-        (click)="setSort('high')"
+        (click)="setSort('priceDesc')"
       >
         Price descending
       </button>
@@ -113,6 +113,7 @@
 
 <div class="product-grid">
   @for (product of filteredProducts; track product.id) {
+   
     <a
       [routerLink]="['/product', product.id]"
       class="product-card-link"
@@ -143,5 +144,26 @@
  
 </div>
 
+
+<div class="pagination">
+                <a href="#" class="pagination__link pagination__link--prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Previous</span>
+                </a>
+                <div class="pagination-list">
+                    <a href="#" class="pagination__link active">1</a>
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <span class="pagination__dots">...</span>
+                    <a href="#" class="pagination__link">20</a>
+                </div>
+                <a href="#" class="pagination__link pagination__link--next">
+                    <span>Next</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+
  </section>
+ 
 </div>

@@ -11,6 +11,8 @@ interface Pepper {
   desc: string;
   price: number;
   keywords: string[];
+  new: boolean;
+  rating: number;
 }
 
 
@@ -50,7 +52,9 @@ export class Home {
       image: "img/Image-1.jpg",
       desc: "A lingering heat that will haunt you",
       price: 6.66,
-      keywords: ['Whole Chilies', 'Grund Spices']
+      keywords: ['Whole Chilies', 'Grund Spices'],
+      new: true,
+      rating: 4
     },
     {
       id: "2",
@@ -58,7 +62,9 @@ export class Home {
       image: "img/Image-2.jpg",
       desc: " Lures you in with sweetness, then bites",
       price: 8.50,
-      keywords: ['Ground Spices']
+      keywords: ['Ground Spices'],
+       new: true,
+       rating: 5
     },
     {
       id: "3",
@@ -66,7 +72,9 @@ export class Home {
       image: "img/Image-3.jpg",
       desc: "A blistering sting you won't forget",
       price: 12.99,
-      keywords: ['Scorching Sauces']
+      keywords: ['Scorching Sauces'],
+       new: false,
+       rating: 10
     },
     {
       id: "4",
@@ -74,7 +82,9 @@ export class Home {
       image: "img/Image-4.png",
       desc: "A bag full of painful mistakes",
       price: 9.99,
-      keywords: ['Whole Chilies']
+      keywords: ['Whole Chilies'],
+       new: false,
+       rating: 5
     },
     {
       id: "5",
@@ -82,7 +92,9 @@ export class Home {
       image: "img/Image-5.png",
       desc: "A classic way to learn your lesson",
       price: 5.00,
-      keywords: ['Sadistic Blends']
+      keywords: ['Sadistic Blends'],
+       new: true,
+       rating: 2
     },
     {
       id: "6",
@@ -90,7 +102,9 @@ export class Home {
       image: "img/Image-6.png",
       desc: "The sweetest suffering on a stick",
       price: 7.77,
-      keywords: ['Infernal Extracts']
+      keywords: ['Infernal Extracts'],
+       new: false,
+       rating: 7
     },
     {
       id: "7",
@@ -98,7 +112,9 @@ export class Home {
       image: "img/Image-7.png",
       desc: "Smoky, gentle, and full of lies",
       price: 4.20,
-      keywords: ['Warming Up']
+      keywords: ['Warming Up'],
+       new: false,
+       rating: 8
     },
     {
       id: "8",
@@ -106,7 +122,9 @@ export class Home {
       image: "img/Image-8.png",
       desc: "Made with scorpion peppers and spite",
       price: 11.99,
-      keywords: ['Serious Heat']
+      keywords: ['Serious Heat'],
+       new: true,
+       rating: 9
     },
     {
       id: "9",
@@ -114,7 +132,9 @@ export class Home {
       image: "img/Image-9.png",
       desc: "Cute round peppers with a cruel punch",
       price: 6.20,
-      keywords: ['Ring of Fire']
+      keywords: ['Ring of Fire'],
+       new: false,
+       rating: 1
     },
     {
       id: "10",
@@ -122,7 +142,9 @@ export class Home {
       image: "img/Image-10.png",
       desc: "For questioning all your life choices",
       price: 19.50,
-      keywords: ['Legal Weapon']
+      keywords: ['Legal Weapon'],
+       new: false,
+       rating: 3
     },
     {
       id: "11",
@@ -130,7 +152,9 @@ export class Home {
       image: "img/Image-11.png",
       desc: "One drop is a crime. Use with caution",
       price: 25.00,
-      keywords: ['Warming Up']
+      keywords: ['Warming Up'],
+       new: true,
+       rating: 6
     },
     {
       id: "12",
@@ -138,7 +162,9 @@ export class Home {
       image: "img/Image-12.png",
       desc: "A salty, crunchy path to pure regret",
       price: 16.20,
-      keywords: ['Infernal Extracts']
+      keywords: ['Infernal Extracts'],
+       new: true,
+       rating:7
     }
   ];
 
@@ -640,6 +666,8 @@ search = '';
 
 sort = 'new';
 
+
+
 toggleCategory(category: string): void {
   if (this.selectedCategory.includes(category)) {
     this.selectedCategory = this.selectedCategory.filter(
@@ -680,7 +708,8 @@ selectWord(word: string): void {
 get filteredProducts(): Pepper[] {
   const query = this.search.trim().toLowerCase();
 
-  return this.peppers.filter(product => {
+  // Фильтрация товаров
+  const filtered = this.peppers.filter(product => {
     const matchesSearch =
       !query ||
       product.title.toLowerCase().includes(query) ||
@@ -689,7 +718,6 @@ get filteredProducts(): Pepper[] {
         keyword.toLowerCase().includes(query)
       );
 
-   
     const matchesCategory =
       this.selectedCategory.length === 0 ||
       product.keywords.some(keyword =>
@@ -698,6 +726,32 @@ get filteredProducts(): Pepper[] {
 
     return matchesSearch && matchesCategory;
   });
+
+  // Сортировка отфильтрованных товаров
+  switch (this.sort) {
+    case 'new':
+      return filtered.sort(
+        (a, b) => Number(b.new) - Number(a.new)
+      );
+
+    case 'priceAsc':
+      return filtered.sort(
+        (a, b) => a.price - b.price
+      );
+
+    case 'priceDesc':
+      return filtered.sort(
+        (a, b) => b.price - a.price
+      );
+
+    case 'rating':
+      return filtered.sort(
+        (a, b) => b.rating - a.rating
+      );
+
+    default:
+      return filtered;
+  }
 }
 
 

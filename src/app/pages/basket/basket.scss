@@ -1,0 +1,196 @@
+
+:host {
+  display: block;
+  width: 100%;
+  color: #202820;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  width: calc(100% - 32px);
+  max-width: 440px;
+  margin: 20px auto 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.basket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: calc(100% - 32px);
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 110px;
+  padding: 12px;
+  background: #f4f4f4;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+
+.basket-item img {
+  display: block;
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+}
+
+.basket-item-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  min-width: 0;
+}
+
+.basket-item-info h2 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.basket-item-info > p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Кнопки количества и удаления */
+.btn__total {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Внешний блок управления */
+.basket-item-info > .btn__total {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Внутренний блок: минус, количество, плюс */
+.btn__total > .btn__total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.btn__total > .btn__total button {
+  min-width: 27px;
+  padding: 4px 7px;
+  border: none;
+  background: #fff;
+  color: #202820;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.btn__total > .btn__total button:hover {
+  background: #eaeaea;
+}
+
+.btn__total > .btn__total p {
+  min-width: 22px;
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Удаление товара справа */
+.removeBtn {
+  margin-left: auto;
+}
+
+.removeBtn button {
+  padding: 5px 9px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background: #fff;
+  color: #202820;
+  font-size: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.removeBtn button:hover {
+  background: rgba(251, 235, 235, 1);
+  color: rgba(200, 30, 30, 1);
+}
+
+/* Итог */
+.basket-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 48px);
+  max-width: 440px;
+  margin: 30px auto 8px;
+}
+
+.basket-total p,
+.basket-total h2 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  
+}
+
+.basket-total h2 {
+  font-size: 13px;
+}
+
+/* Пустая корзина */
+.basket-empty {
+  margin: 40px auto;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .basket-item {
+    gap: 9px;
+    padding: 8px;
+  }
+
+  .basket-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .basket-item-info {
+    gap: 9px;
+  }
+
+  .basket-item-info h2 {
+    font-size: 12px;
+  }
+
+  .basket-item-info > p {
+    font-size: 15px;
+  }
+
+  .removeBtn button {
+    padding: 5px 6px;
+    font-size: 9px;
+  }
+}

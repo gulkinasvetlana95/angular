@@ -104,6 +104,37 @@
 .add-to-cart:hover {
   background: #a50000;
 }
+.addBtn{
+  display: flex;
+  display: block;
+  gap: 50px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  padding-bottom: 14px;
+  &_sing{
+    margin-top: 15px;
+  }
+}
+.plus_sing{
+  font-size: 14px;
+  padding-top: 5px ;
+}
+.addedProduct{
+ display: flex;
+  width: 50%;
+  gap: 50px;
+  min-width: 150px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: rgba(122, 0, 0, 1);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 /* Технические характеристики */
 

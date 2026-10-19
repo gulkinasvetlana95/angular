@@ -27,8 +27,17 @@
               <p>{{ details.description }}</p>
             </section>
           }
-
-          <button class="add-to-cart">Add to Cart</button>
+          
+           @if(AddProduct === 0){
+          <button class="add-to-cart" (click)="ClickPlus()">Add to Cart</button>
+           } @else {
+            <div class="addedProduct">
+            <button class="addBtn" (click)="ClickPlus()">+</button>
+          <p class="plus_sing">{{AddProduct}} in cart</p>
+          <button class="addBtn" (click)="ClickMinus()">–</button>
+            </div>
+        }
+          
         </div>
       </section>
 

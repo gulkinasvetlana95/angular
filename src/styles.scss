@@ -1439,7 +1439,7 @@ body.user-logged-in .header__user-actions {
 /* Order History Table */
 .order-history-table {
     width: 100%;
-    background-color: var(--background-default);
+    background-color: rgba(217, 217, 217, 1);
     border-radius: 16px;
     border: 1px solid var(--border-default);
     overflow: hidden; /* To clip corners of header */
@@ -1448,7 +1448,7 @@ body.user-logged-in .header__user-actions {
 .order-table-header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; /* 3-column layout */
-    background-color: var(--background-green);
+    background-color: rgba(255, 156, 149, 1);
     font-weight: 700;
 }
 

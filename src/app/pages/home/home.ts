@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Header } from '../../components/header/header';
 import { Footer } from '../../components/footer/footer';
-import { RouterOutlet } from '@angular/router';
+
 interface Pepper {
   id: string;
   title: string;
@@ -38,7 +38,7 @@ interface ProductSpecification {
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Footer,  RouterLink,],
+  imports: [Header, Footer,  RouterLink, ],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
